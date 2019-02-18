@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".current_course">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="349dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/scheduleimageview"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:onClick="comingsoon"
+            app:srcCompat="@drawable/course_schedule" />
+
+        <ImageView
+            android:id="@+id/courseinfo"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:onClick="courseinfo"
+            app:srcCompat="@drawable/course_info" />
+
+        <ImageView
+            android:id="@+id/discussionimageview"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:cropToPadding="false"
+            android:onClick="comingsoon"
+            app:srcCompat="@drawable/discussion" />
+
+        <ImageView
+            android:id="@+id/quizimageview"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_alignStart="@+id/courseinfo"
+            android:layout_alignTop="@+id/discussionimageview"
+            android:layout_marginRight="20dp"
+            android:onClick="comingsoon"
+            app:srcCompat="@drawable/quiz_image" />
+
+        <ImageView
+            android:id="@+id/attendanceimageview"
+            android:layout_width="150dp"
+            android:layout_height="113dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="26dp"
+            android:onClick="comingsoon"
+            app:srcCompat="@drawable/attendance" />
+
+        <ImageView
+            android:id="@+id/materialimageview"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_alignStart="@+id/courseinfo"
+            android:layout_alignTop="@+id/attendanceimageview"
+            android:onClick="comingsoon"
+            app:srcCompat="@drawable/course_material" />
+
+        <TextView
+            android:id="@+id/scheduletextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/scheduleimageview"
+            android:layout_marginStart="31dp"
+            android:text="SCHEDULE"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/infotextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/scheduleimageview"
+            android:layout_marginEnd="72dp"
+            android:text=" INFO"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/discussiontextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/discussionimageview"
+            android:layout_marginStart="20dp"
+            android:text="DISCUSSIONS"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/quiztextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/infotextview"
+            android:layout_below="@+id/discussionimageview"
+            android:text="QUIZ "
+            android:textColor="@android:color/holo_purple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/attendancetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/discussiontextview"
+            android:layout_below="@+id/attendanceimageview"
+            android:layout_marginTop="-26dp"
+            android:text="ATTENDANCE"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/materialtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="46dp"
+            android:text="MATERIAL"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/coursetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="163dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
